@@ -5,7 +5,7 @@ A variational autoencoder made with tensorflow loaded into Unity for the procedu
 
 
 ## Unity 
-To change the tensorflow model in unity:
+To get started with generating your own 3D meshes follow the instructions below
 1. Train a new model in tensorflow (e.g. VAE in [autoencoder.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/autoencoder.py#L242))
 
 2. Load the frozen tensor flow graph into unity 
@@ -55,6 +55,12 @@ Example code from: [autoencoder.py](https://github.com/pearsonkyle/Unity-Variati
 ```
 Make sure in the build_decoder function the layers have names so that we can reference them from the tensorflow graph. 
 
+### Training on fonts 
+A deeper VAE was trained on hieroglyphs generated from a font
+
+![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/vae_hieroglyph.gif)
+
+See [image_generation.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/fonts/image_generation.py) for more information on creating training data sets from ttf fonts
 
 ## Useful links
 - https://github.com/llSourcell/Unity_ML_Agents/tree/master/docs
