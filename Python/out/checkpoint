@@ -1,0 +1,2 @@
+model_checkpoint_path: "hiero_decoder_4096.chkp"
+all_model_checkpoint_paths: "hiero_decoder_4096.chkp"
