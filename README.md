@@ -3,6 +3,13 @@ A variational autoencoder made with tensorflow loaded into Unity for the procedu
 
 ![](https://github.com/pearsonkyle/Unity-Vartiational-Autoencoder/blob/master/MNIST_VAE.gif)
 
+## Dependencies
+- Unity 3D
+- [Unity ML Agents](https://github.com/llSourcell/Unity_ML_Agents/tree/master/docs)
+- https://github.com/llSourcell/Unity_ML_Agents/blob/master/docs/Using-TensorFlow-Sharp-in-Unity-(Experimental).md
+- Python 3.6+
+- Keras, Tensorflow, Matplotlib, Numpy, PIL, Scikit-learn
+
 
 ## Unity 
 To get started with generating your own 3D meshes follow the instructions below
@@ -64,6 +71,3 @@ A deep VAE was trained on hieroglyphs generated from a font
 
 See [image_generation.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/fonts/image_generation.py) for more information on creating training data sets from ttf fonts
 
-## Useful links
-- https://github.com/llSourcell/Unity_ML_Agents/tree/master/docs
-- https://github.com/llSourcell/Unity_ML_Agents/blob/master/docs/Using-TensorFlow-Sharp-in-Unity-(Experimental).md
