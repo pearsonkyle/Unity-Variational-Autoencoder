@@ -9,9 +9,11 @@ To get started with generating your own 3D meshes follow the instructions below
 1. Train a new model in tensorflow (e.g. VAE in [autoencoder.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/autoencoder.py#L242))
 
 2. Load the frozen tensor flow graph into unity 
+
 ![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/tensorflow_model_unity.png)
 
 3. Change the resolution of the tensorflow model in Unity
+
 ![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/meshgen_edit.png)
 
 
