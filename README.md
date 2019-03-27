@@ -58,7 +58,7 @@ Example code from: [autoencoder.py](https://github.com/pearsonkyle/Unity-Variati
 Make sure in the build_decoder function the layers have names so that we can reference them from the tensorflow graph. 
 
 ### Training on fonts 
-A deeper VAE was trained on hieroglyphs generated from a font
+A deep VAE was trained on hieroglyphs generated from a font
 
 ![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/vae_hieroglyph.gif)
 
