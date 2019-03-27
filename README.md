@@ -1,14 +1,24 @@
 # Unity-Variational-Autoencoder
 A variational autoencoder made with tensorflow loaded into Unity for the procedural generation of 3D surfaces
 
-
-
 ![](https://github.com/pearsonkyle/Unity-Vartiational-Autoencoder/blob/master/MNIST_VAE.gif)
+
+
+## Unity 
+To change the tensorflow model in unity:
+1. Train a new model in tensorflow (e.g. VAE in [autoencoder.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/autoencoder.py#L242))
+
+2. Load the frozen tensor flow graph into unity 
+![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/tensorflow_model_unity.png)
+
+3. Change the resolution of the tensorflow model in Unity
+![](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/meshgen_edit.png)
+
 
 ## Python
 The variational autoencoder is created using keras and tensorflow in Python3.6. Please see the Python/ directory
 
-Example code from: [autoencoder.py](https://github.com/pearsonkyle/Unity-Vartiational-Autoencoder/blob/master/Python/autoencoder.py#L242)
+Example code from: [autoencoder.py](https://github.com/pearsonkyle/Unity-Variational-Autoencoder/blob/master/Python/autoencoder.py#L242)
 ```python
     # load data 
     # (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -43,6 +53,7 @@ Example code from: [autoencoder.py](https://github.com/pearsonkyle/Unity-Vartiat
     decoder.load_weights("decoder_weights")
     export_model(tf.train.Saver(), decoder,"hiero2_decoder16384", ['decoder_input'], "decoder_output/Sigmoid")
 ```
+Make sure in the build_decoder function the layers have names so that we can reference them from the tensorflow graph. 
 
 
 ## Useful links
